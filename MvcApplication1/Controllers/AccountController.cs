@@ -40,7 +40,7 @@ namespace MvcApplication1.Controllers
                 return RedirectToLocal(returnUrl);
             }
 
-            // 如果我们进行到这一步时某个地方出错，则重新显示表单
+            // 表单
             ModelState.AddModelError("", "提供的用户名或密码不正确。");
             return View(model);
         }
